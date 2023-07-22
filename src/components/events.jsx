@@ -10,14 +10,6 @@ export class Events extends PureComponent {
         this.showNotification = this.showNotification.bind(this);
     }
 
-    // componentDidMount() {
-    //     if (!("Notification" in window)) {
-    //         console.log("Browser does not support desktop notification");
-    //     } else {
-    //         Notification.requestPermission();
-    //     }
-    //   }
-
     showNotification = async (e) => {
         e.preventDefault();
         var options = {
@@ -33,7 +25,6 @@ export class Events extends PureComponent {
             await Notification.requestPermission().then((permission) => {
                 if (permission === "granted") {
                     const notification = new Notification("Notification Demo", options);
-                    // const notification = new Notification('Hey! You got a notification');
                 }
             });
         }
@@ -46,7 +37,6 @@ export class Events extends PureComponent {
                     variant="contained"
                     color="error"
                     sx={{ mt: 3, mb: 2, marginBottom: 5 }} onClick={this.showNotification}>Show notification</Button>
-                {/* <button onClick={this.showNotification}>Show notification</button> */}
             </div>
         );
     }
