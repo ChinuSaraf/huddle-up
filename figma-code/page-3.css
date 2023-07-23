@@ -1,0 +1,27 @@
+// Select your username ->
+color: 'black';
+ fontSize: 32;
+ fontFamily: 'Inter';
+ fontWeight: '600';
+ wordWrap: 'break-word'
+---
+// Don’t stress about it, you can always change the name later!
+color: 'black';
+ fontSize: 24;
+ fontFamily: 'Inter';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// |
+color: 'black';
+ fontSize: 24;
+ fontFamily: 'Inter';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Confirm
+color: 'white';
+ fontSize: 24;
+ fontFamily: 'Inter';
+ fontWeight: '500';
+ wordWrap: 'break-word'
