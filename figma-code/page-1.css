@@ -1,0 +1,20 @@
+// Break Time? Find a buddy! 🎈
+color: 'black';
+ fontSize: 40;
+ fontFamily: 'Inter';
+ fontWeight: '600';
+ wordWrap: 'break-word'
+---
+// Huddle Up helps you make impromptu plans with people in the same space!
+color: 'black';
+ fontSize: 15;
+ fontFamily: 'Inter';
+ fontWeight: '400';
+ wordWrap: 'break-word'
+---
+// Less Goo
+color: 'white';
+ fontSize: 24;
+ fontFamily: 'Inter';
+ fontWeight: '500';
+ wordWrap: 'break-word'
