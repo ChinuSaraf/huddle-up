@@ -4,6 +4,10 @@ import { PureComponent } from "react";
 import Header from "./components/common/header";
 import NoPage from "./components/common/no-page";
 import Events from "./components/events";
+import BreakTime from "./components/breakTime";
+import SelectCategories from "./components/selectCategories";
+import SelectUsername from "./components/selectUsername";
+
 export class App extends PureComponent {
 
   constructor(props){
@@ -20,6 +24,9 @@ export class App extends PureComponent {
             <Route path="/" element={<Events />}/>
             <Route index element={<Events />} />
             <Route path="events" element={<Events />}/>
+            <Route path="breakTime" element={<BreakTime />}/>
+            <Route path="selectCategories" element={<SelectCategories />}/>
+            <Route path="selectUsername" element={<SelectUsername />}/>
            </Routes>
         </BrowserRouter>
       </div>
