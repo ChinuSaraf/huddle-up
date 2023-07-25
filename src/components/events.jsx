@@ -33,10 +33,10 @@ export class Events extends PureComponent {
     render() {
         return (
             <div>
-                <Button
+                {/* <Button
                     variant="contained"
                     color="error"
-                    sx={{ mt: 3, mb: 2, marginBottom: 5 }} onClick={this.showNotification}>Show notification</Button>
+                    sx={{ mt: 3, mb: 2, marginBottom: 5 }} onClick={this.showNotification}>Show notification</Button> */}
                 <div style={{width: '100%', height: '100%', position: 'relative', background: '#E2F1FE'}}>
                     <div style={{width: 1440, height: 135, left: 0, top: 0, position: 'absolute'}}>
                         <div style={{left: 210, top: 51, position: 'absolute', color: '#1C274C', fontSize: 40, fontFamily: 'Inter', fontWeight: '600', wordWrap: 'break-word'}}>HuddleUp</div>
@@ -535,4 +535,4 @@ export class Events extends PureComponent {
 
 }
 
-export default Events;
+export default withRouter(Events);

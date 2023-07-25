@@ -2,12 +2,22 @@ import { PureComponent } from "react";
 import { withRouter } from './common/withRouter';
 import React from "react";
 import { Button } from "@mui/material";
-// import "./breakTime.css";
+
+import avatar from "./common/icons/avatar.svg";
+import avatar1 from "./common/icons/avatar1.svg";
+import avatar2 from "./common/icons/avatar2.svg";
+import avatar3 from "./common/icons/avatar3.svg";
+import avatar4 from "./common/icons/avatar4.svg";
+import avatar5 from "./common/icons/avatar5.svg";
 
 export class BreakTime extends PureComponent {
     constructor(props) {
         super(props);
     }
+
+    onClickLetsGo = (e) => {
+        this.props.navigate('/selectCategories')
+    };
 
     render() {
         return (
@@ -20,14 +30,14 @@ export class BreakTime extends PureComponent {
                             </div>
                             <div style={{width: 91.40, height: 123.01, left: 20.96, top: 11.01, position: 'absolute'}}>
                                 <div style={{width: 71.05, height: 113.68, left: 11.01, top: 4.26, position: 'absolute'}}>
-                                    <div style={{width: 43.40, height: 41.30, left: 10.50, top: 74.20, position: 'absolute'}}>
+                                    {/* <div style={{width: 43.40, height: 41.30, left: 10.50, top: 74.20, position: 'absolute'}}>
                                         <div style={{width: 43.40, height: 37.63, left: 0, top: 0, position: 'absolute', background: '#AC6651', border: '0.70px black solid'}}></div>
                                         <div style={{width: 43.40, height: 41.13, left: 0, top: 0, position: 'absolute', background: '#AC6651'}}></div>
                                         <div style={{width: 41.30, height: 37.80, left: 12.25, top: -19.60, position: 'absolute', background: 'black', borderRadius: 9999}} />
-                                    </div>
-                                    <img style={{width: 60.21, height: 78.57, left: 4.88, top: 7.68, position: 'absolute', border: '0.70px black solid'}} src="https://via.placeholder.com/60x79" />
+                                    </div> */}
+                                    <img style={{width: 60.21, height: 78.57, left: 4.88, top: 7.68, position: 'absolute'}} src={avatar} />
                                 </div>
-                                <div style={{width: 22.74, height: 22.74, left: 42.99, top: 61.11, position: 'absolute'}}>
+                                {/* <div style={{width: 22.74, height: 22.74, left: 42.99, top: 61.11, position: 'absolute'}}>
                                     <div style={{width: 22.40, height: 11.20, left: -0.60, top: 7.02, position: 'absolute', transform: 'rotate(-7.05deg)', transformOrigin: '0 0'}}>
                                         <div style={{width: 22.40, height: 11.20, left: 0, top: 0, position: 'absolute', transform: 'rotate(-7.05deg)', transformOrigin: '0 0', background: 'black', borderRadius: 0.35, border: '0.70px black solid'}}></div>
                                         <div style={{width: 22.40, height: 11.20, left: 0, top: 0, position: 'absolute', transform: 'rotate(-7.05deg)', transformOrigin: '0 0'}}>
@@ -41,22 +51,22 @@ export class BreakTime extends PureComponent {
                                         <div style={{width: 9.45, height: 3.05, left: 26.95, top: 0, position: 'absolute', border: '0.70px black solid'}}></div>
                                         <div style={{width: 9.45, height: 3.05, left: -0, top: 9.09, position: 'absolute', transform: 'rotate(-45.49deg)', transformOrigin: '0 0', border: '0.70px black solid'}}></div>
                                     </div>
-                                </div>
-                                <div style={{width: 85.26, height: 71.05, left: 0, top: 0, position: 'absolute'}}>
+                                </div> */}
+                                {/* <div style={{width: 85.26, height: 71.05, left: 0, top: 0, position: 'absolute'}}>
                                     <div style={{width: 49, height: 52.39, left: 16.80, top: -2.10, position: 'absolute'}}>
                                         <div style={{width: 12.43, height: 11.55, left: 36.57, top: 17.56, position: 'absolute', opacity: 0.35, background: '#717376'}}></div>
                                         <div style={{width: 22.66, height: 27.21, left: 12.91, top: 5.28, position: 'absolute', transform: 'rotate(-13.47deg)', transformOrigin: '0 0', background: '#171921'}}></div>
                                         <div style={{width: 19.25, height: 26.43, left: 0, top: 6.01, position: 'absolute', background: '#171921'}}></div>
                                         <div style={{width: 18.93, height: 28.09, left: 0.32, top: 24.30, position: 'absolute', opacity: 0.35, background: '#717376'}}></div>
                                     </div>
-                                </div>
-                                <div style={{width: 34.11, height: 17.05, left: 33.04, top: 38.37, position: 'absolute'}}>
+                                </div> */}
+                                {/* <div style={{width: 34.11, height: 17.05, left: 33.04, top: 38.37, position: 'absolute'}}>
                                     <div style={{width: 29.75, height: 8.04, left: 2.01, top: 4.75, position: 'absolute'}}>
                                         <img style={{width: 7.38, height: 4.58, left: 0, top: 3.45, position: 'absolute', borderRadius: 0.35}} src="https://via.placeholder.com/7x5" />
                                         <img style={{width: 7.31, height: 4.54, left: 22.44, top: 0, position: 'absolute', borderRadius: 0.35}} src="https://via.placeholder.com/7x5" />
                                     </div>
-                                </div>
-                                <div style={{width: 11.37, height: 14.21, left: 45.25, top: 48.82, position: 'absolute', transform: 'rotate(-8deg)', transformOrigin: '0 0'}}>
+                                </div> */}
+                                {/* <div style={{width: 11.37, height: 14.21, left: 45.25, top: 48.82, position: 'absolute', transform: 'rotate(-8deg)', transformOrigin: '0 0'}}>
                                     <div style={{width: 4.90, height: 6.65, left: 3.85, top: 4.20, position: 'absolute', border: '0.70px black solid'}}></div>
                                 </div>
                                 <div style={{width: 17.05, height: 17.05, left: 12.43, top: 50.80, position: 'absolute'}}>
@@ -73,7 +83,7 @@ export class BreakTime extends PureComponent {
                                     <div style={{width: 5.60, height: 7.53, left: 54.95, top: 11.20, position: 'absolute', transform: 'rotate(180deg)', transformOrigin: '0 0', background: 'black', border: '0.70px black solid'}}></div>
                                     <div style={{width: 4.20, height: 3.33, left: 20.48, top: 4.90, position: 'absolute', background: 'black', border: '0.70px black solid'}}></div>
                                     <div style={{width: 3.85, height: 3.33, left: 59.85, top: 4.90, position: 'absolute', transform: 'rotate(180deg)', transformOrigin: '0 0', background: 'black', border: '0.70px black solid'}}></div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div style={{width: 180, height: 180, left: -35, top: 507, position: 'absolute'}}>
@@ -82,17 +92,17 @@ export class BreakTime extends PureComponent {
                             </div>
                             <div style={{width: 124.11, height: 166.69, left: 27.95, top: 14.68, position: 'absolute'}}>
                                 <div style={{width: 94.74, height: 151.58, left: 14.68, top: 5.68, position: 'absolute'}}>
-                                    <div style={{width: 58.74, height: 55.89, left: 14.21, top: 100.42, position: 'absolute'}}>
+                                    {/* <div style={{width: 58.74, height: 55.89, left: 14.21, top: 100.42, position: 'absolute'}}>
                                         <div style={{width: 58.74, height: 50.92, left: 0, top: 0, position: 'absolute', background: '#F9C9B6', border: '0.95px black solid'}}></div>
                                         <div style={{width: 58.74, height: 55.66, left: 0, top: 0, position: 'absolute', background: '#AC6651'}}></div>
                                         <div style={{width: 55.89, height: 51.16, left: 16.58, top: -26.53, position: 'absolute', background: 'black', borderRadius: 9999}} />
-                                    </div>
-                                    <img style={{width: 81.48, height: 106.33, left: 6.61, top: 10.40, position: 'absolute', border: '0.95px black solid'}} src="https://via.placeholder.com/81x106" />
-                                    <div style={{width: 77.55, height: 72.50, left: 16.11, top: 48.46, position: 'absolute'}}>
+                                    </div> */}
+                                    <img style={{width: 81.48, height: 106.33, left: 6.61, top: 10.40, position: 'absolute'}} src={avatar1} />
+                                    {/* <div style={{width: 77.55, height: 72.50, left: 16.11, top: 48.46, position: 'absolute'}}>
                                         <div style={{width: 56.84, height: 35.53, left: 9, top: 28.89, position: 'absolute', background: 'black', border: '0.24px black solid'}}></div>
-                                    </div>
+                                    </div> */}
                                 </div>
-                                <div style={{width: 30.32, height: 30.32, left: 57.32, top: 81.47, position: 'absolute'}}>
+                                {/* <div style={{width: 30.32, height: 30.32, left: 57.32, top: 81.47, position: 'absolute'}}>
                                     <div style={{width: 17.53, height: 10.63, left: 9.38, top: 21.01, position: 'absolute', transform: 'rotate(-25.91deg)', transformOrigin: '0 0', border: '0.95px black solid'}}></div>
                                 </div>
                                 <div style={{width: 70.58, height: 22.74, left: 28.89, top: 43.11, position: 'absolute'}}>
@@ -130,7 +140,7 @@ export class BreakTime extends PureComponent {
                                 <div style={{width: 122.21, height: 43.06, left: 1.89, top: 123.63, position: 'absolute'}}>
                                     <div style={{width: 132.87, height: 31.29, left: -7.57, top: 12.76, position: 'absolute', background: '#F4D150', border: '0.95px black solid'}}></div>
                                     <div style={{width: 62.06, height: 14.95, left: 25.23, top: 7.50, position: 'absolute', transform: 'rotate(2deg)', transformOrigin: '0 0', background: 'white', borderRadius: 0.47, border: '0.95px black solid'}}></div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div style={{width: 180, height: 180, left: 161, top: 375, position: 'absolute'}}>
@@ -139,21 +149,21 @@ export class BreakTime extends PureComponent {
                             </div>
                             <div style={{width: 125.79, height: 168.70, left: 27.95, top: 14.68, position: 'absolute'}}>
                                 <div style={{width: 58.74, height: 55.89, left: 28.89, top: 106.11, position: 'absolute'}}>
-                                    <div style={{width: 59.39, height: 56.28, left: -0.69, top: -0.26, position: 'absolute', background: '#FC909F', border: '0.96px black solid'}}></div>
+                                    {/* <div style={{width: 59.39, height: 56.28, left: -0.69, top: -0.26, position: 'absolute', background: '#FC909F', border: '0.96px black solid'}}></div>
                                     <div style={{width: 59.39, height: 56.28, left: -0.69, top: -0.26, position: 'absolute'}}>
                                         <div style={{width: 59.39, height: 56.28, left: 0, top: 0, position: 'absolute', background: '#FFEDEF'}}></div>
                                         <div style={{width: 56.52, height: 51.73, left: 17.46, top: -26.56, position: 'absolute', background: 'black', borderRadius: 9999}} />
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div style={{width: 94.74, height: 151.58, left: 14.68, top: 5.68, position: 'absolute'}}>
-                                    <div style={{width: 59.39, height: 56.52, left: 14.37, top: 101.54, position: 'absolute'}}>
+                                    {/* <div style={{width: 59.39, height: 56.52, left: 14.37, top: 101.54, position: 'absolute'}}>
                                         <div style={{width: 59.39, height: 51.49, left: 0, top: 0, position: 'absolute', background: '#F9C9B6', border: '0.96px black solid'}}></div>
                                         <div style={{width: 59.39, height: 56.28, left: 0, top: 0, position: 'absolute', background: '#F9C9B6'}}></div>
                                         <div style={{width: 56.52, height: 51.73, left: 16.76, top: -26.82, position: 'absolute', background: 'black', borderRadius: 9999}} />
-                                    </div>
-                                    <img style={{width: 82.38, height: 107.51, left: 6.68, top: 10.51, position: 'absolute', border: '0.96px black solid'}} src="https://via.placeholder.com/82x108" />
+                                    </div> */}
+                                    <img style={{width: 82.38, height: 107.51, left: 6.68, top: 10.51, position: 'absolute'}} src={avatar2} />
                                 </div>
-                                <div style={{width: 30.32, height: 30.32, left: 57.32, top: 81.47, position: 'absolute'}}>
+                                {/* <div style={{width: 30.32, height: 30.32, left: 57.32, top: 81.47, position: 'absolute'}}>
                                     <div style={{width: 27.30, height: 8.09, left: -0.24, top: 8.38, position: 'absolute', border: '0.96px black solid'}}></div>
                                 </div>
                                 <div style={{width: 70.58, height: 22.74, left: 28.89, top: 43.11, position: 'absolute'}}>
@@ -183,7 +193,7 @@ export class BreakTime extends PureComponent {
                                 <div style={{width: 123.57, height: 43.54, left: 2.23, top: 125.17, position: 'absolute'}}>
                                     <div style={{width: 134.35, height: 31.64, left: -7.65, top: 12.90, position: 'absolute', background: '#77311D', border: '0.96px black solid'}}></div>
                                     <div style={{width: 62.75, height: 15.11, left: 25.51, top: 7.58, position: 'absolute', transform: 'rotate(2deg)', transformOrigin: '0 0', background: 'white', borderRadius: 0.48, border: '0.96px black solid'}}></div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div style={{width: 182, height: 182, left: 202, top: 674, position: 'absolute'}}>
@@ -192,23 +202,23 @@ export class BreakTime extends PureComponent {
                             </div>
                             <div style={{width: 131.46, height: 175.67, left: 28.26, top: 14.85, position: 'absolute'}}>
                                 <div style={{width: 59.39, height: 56.52, left: 29.22, top: 107.28, position: 'absolute'}}>
-                                    <div style={{width: 61.70, height: 58.47, left: -0.85, top: -1.36, position: 'absolute', background: '#FC909F', border: '1px black solid'}}></div>
-                                    <div style={{width: 61.70, height: 58.47, left: -0.85, top: -1.36, position: 'absolute'}}>
+                                    {/* <div style={{width: 61.70, height: 58.47, left: -0.85, top: -1.36, position: 'absolute', background: '#FC909F', border: '1px black solid'}}></div> */}
+                                    {/* <div style={{width: 61.70, height: 58.47, left: -0.85, top: -1.36, position: 'absolute'}}>
                                         <div style={{width: 61.70, height: 58.47, left: 0, top: 0, position: 'absolute', background: '#FFEDEF'}}></div>
                                         <div style={{width: 58.71, height: 53.74, left: 18.26, top: -26.51, position: 'absolute', background: 'black', borderRadius: 9999}} />
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div style={{width: 95.79, height: 158.05, left: 14.85, top: 5.75, position: 'absolute'}}>
-                                    <div style={{width: 61.70, height: 58.71, left: 14.93, top: 105.49, position: 'absolute'}}>
+                                    {/* <div style={{width: 61.70, height: 58.71, left: 14.93, top: 105.49, position: 'absolute'}}>
                                         <div style={{width: 61.70, height: 58.47, left: 0, top: 0, position: 'absolute', background: '#AC6651', border: '1px black solid'}}></div>
                                         <div style={{width: 61.70, height: 58.47, left: 0, top: 0, position: 'absolute'}}>
                                             <div style={{width: 61.70, height: 58.47, left: 0, top: 0, position: 'absolute', background: '#AC6651'}}></div>
                                             <div style={{width: 58.71, height: 53.74, left: 17.42, top: -27.86, position: 'absolute', background: 'black', borderRadius: 9999}} />
                                         </div>
-                                    </div>
-                                    <img style={{width: 85.59, height: 111.69, left: 6.94, top: 10.92, position: 'absolute', border: '1px black solid'}} src="https://via.placeholder.com/86x112" />
+                                    </div> */}
+                                    <img style={{width: 85.59, height: 111.69, left: 6.94, top: 10.92, position: 'absolute'}} src={avatar3} />
                                 </div>
-                                <div style={{width: 30.65, height: 30.65, left: 57.95, top: 82.38, position: 'absolute'}}>
+                                {/* <div style={{width: 30.65, height: 30.65, left: 57.95, top: 82.38, position: 'absolute'}}>
                                     <div style={{width: 18.41, height: 11.17, left: 9.85, top: 22.07, position: 'absolute', transform: 'rotate(-25.91deg)', transformOrigin: '0 0', border: '1px black solid'}}></div>
                                 </div>
                                 <div style={{width: 71.36, height: 22.99, left: 29.22, top: 43.58, position: 'absolute'}}>
@@ -247,7 +257,7 @@ export class BreakTime extends PureComponent {
                                 <div style={{width: 128.37, height: 45.23, left: 3.09, top: 130.44, position: 'absolute'}}>
                                     <div style={{width: 139.57, height: 32.87, left: -7.95, top: 13.40, position: 'absolute', background: '#9287FF', border: '1px black solid'}}></div>
                                     <div style={{width: 65.19, height: 15.70, left: 26.50, top: 7.88, position: 'absolute', transform: 'rotate(2deg)', transformOrigin: '0 0', background: '#E0DDFF', borderRadius: 0.50, border: '1px black solid'}}></div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div style={{width: 131, height: 131, left: 337, top: 538, position: 'absolute'}}>
@@ -256,21 +266,21 @@ export class BreakTime extends PureComponent {
                             </div>
                             <div style={{width: 103.44, height: 119.11, left: 11.38, top: 10.69, position: 'absolute'}}>
                                 <div style={{width: 42.75, height: 40.68, left: 29.99, top: 77.22, position: 'absolute'}}>
-                                    <div style={{width: 42.03, height: 39.83, left: -0.02, top: -0, position: 'absolute', background: '#FC909F', border: '0.68px black solid'}}></div>
+                                    {/* <div style={{width: 42.03, height: 39.83, left: -0.02, top: -0, position: 'absolute', background: '#FC909F', border: '0.68px black solid'}}></div>
                                     <div style={{width: 42.03, height: 39.83, left: -0.02, top: -0, position: 'absolute'}}>
                                         <div style={{width: 42.03, height: 39.83, left: 0, top: 0, position: 'absolute', background: '#FFEDEF'}}></div>
                                         <div style={{width: 40, height: 36.61, left: 11.88, top: -18.98, position: 'absolute', background: 'black', borderRadius: 9999}} />
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div style={{width: 68.95, height: 110.32, left: 19.65, top: 4.14, position: 'absolute'}}>
-                                    <div style={{width: 42.03, height: 40, left: 10.17, top: 71.87, position: 'absolute'}}>
+                                    {/* <div style={{width: 42.03, height: 40, left: 10.17, top: 71.87, position: 'absolute'}}>
                                         <div style={{width: 42.03, height: 36.44, left: 0, top: 0, position: 'absolute', background: '#77311D', border: '0.68px black solid'}}></div>
                                         <div style={{width: 42.03, height: 39.83, left: 0, top: 0, position: 'absolute', background: '#AC6651'}}></div>
                                         <div style={{width: 40, height: 36.61, left: 11.86, top: -18.98, position: 'absolute', background: 'black', borderRadius: 9999}} />
-                                    </div>
-                                    <img style={{width: 58.31, height: 76.09, left: 4.73, top: 7.44, position: 'absolute', border: '0.68px black solid'}} src="https://via.placeholder.com/58x76" />
+                                    </div> */}
+                                    <img style={{width: 58.31, height: 76.09, left: 4.73, top: 7.44, position: 'absolute'}} src={avatar4} />
                                 </div>
-                                <div style={{width: 22.06, height: 22.06, left: 50.68, top: 59.29, position: 'absolute'}}>
+                                {/* <div style={{width: 22.06, height: 22.06, left: 50.68, top: 59.29, position: 'absolute'}}>
                                     <div style={{width: 21.70, height: 10.85, left: -0.58, top: 6.80, position: 'absolute', transform: 'rotate(-7.05deg)', transformOrigin: '0 0'}}>
                                         <div style={{width: 21.70, height: 10.85, left: 0, top: 0, position: 'absolute', transform: 'rotate(-7.05deg)', transformOrigin: '0 0', background: '#171921', borderRadius: 0.34, border: '0.68px #171921 solid'}}></div>
                                         <div style={{width: 21.70, height: 10.85, left: 0, top: 0, position: 'absolute', transform: 'rotate(-7.05deg)', transformOrigin: '0 0'}}>
@@ -321,24 +331,23 @@ export class BreakTime extends PureComponent {
                                 </div>
                                 <div style={{width: 87.46, height: 30.81, left: 9.98, top: 88.30, position: 'absolute'}}>
                                     <div style={{width: 95.09, height: 27.12, left: -5.42, top: 4.41, position: 'absolute', background: 'white', border: '0.72px black solid'}}></div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div style={{width: 198, height: 198, left: 259, top: 104, position: 'absolute'}}>
                             <div style={{width: 203.50, height: 203.50, left: 0, top: 0, position: 'absolute'}}>
                                 <div style={{width: 203.50, height: 203.50, left: 0, top: 0, position: 'absolute', background: '#E0DDFF', borderRadius: 9999}} />
                             </div>
-                            <div style={{width: 198, height: 198, left: 0, top: 0, position: 'absolute', background: '#FFEDEF', borderRadius: 9999}} />
                             <div style={{width: 141.16, height: 188.90, left: 30.74, top: 16.15, position: 'absolute'}}>
                                 <div style={{width: 104.21, height: 166.74, left: 16.15, top: 6.25, position: 'absolute'}}>
-                                    <div style={{width: 66.41, height: 63.19, left: 16.07, top: 113.53, position: 'absolute'}}>
+                                    {/* <div style={{width: 66.41, height: 63.19, left: 16.07, top: 113.53, position: 'absolute'}}>
                                         <div style={{width: 66.41, height: 57.57, left: 0, top: 0, position: 'absolute', background: '#F9C9B6', border: '1.07px black solid'}}></div>
                                         <div style={{width: 66.41, height: 62.92, left: 0, top: 0, position: 'absolute', background: '#F9C9B6'}}></div>
                                         <div style={{width: 63.19, height: 57.84, left: 18.74, top: -29.99, position: 'absolute', background: 'black', borderRadius: 9999}} />
-                                    </div>
-                                    <img style={{width: 92.12, height: 120.21, left: 7.47, top: 11.76, position: 'absolute', border: '1.07px black solid'}} src="https://via.placeholder.com/92x120" />
+                                    </div> */}
+                                    <img style={{width: 92.12, height: 120.21, left: 7.47, top: 11.76, position: 'absolute'}} src={avatar5} />
                                 </div>
-                                <div style={{width: 33.35, height: 33.35, left: 63.05, top: 89.62, position: 'absolute'}}>
+                                {/* <div style={{width: 33.35, height: 33.35, left: 63.05, top: 89.62, position: 'absolute'}}>
                                     <div style={{width: 18.85, height: 22.77, left: 5.67, top: 7.59, position: 'absolute', transform: 'rotate(-10.26deg)', transformOrigin: '0 0'}}>
                                         <div style={{width: 18.85, height: 22.77, left: 0, top: 0, position: 'absolute', transform: 'rotate(-10.26deg)', transformOrigin: '0 0', background: 'black', borderRadius: 9999, border: '0.96px black solid'}} />
                                         <div style={{width: 18.85, height: 22.77, left: 0, top: 0, position: 'absolute', transform: 'rotate(-10.26deg)', transformOrigin: '0 0'}}>
@@ -392,7 +401,7 @@ export class BreakTime extends PureComponent {
                                     <div style={{width: 8.57, height: 11.51, left: 84.08, top: 17.14, position: 'absolute', transform: 'rotate(180deg)', transformOrigin: '0 0', background: 'black', border: '1.07px black solid'}}></div>
                                     <div style={{width: 6.43, height: 5.09, left: 31.33, top: 7.50, position: 'absolute', background: 'black', border: '1.07px black solid'}}></div>
                                     <div style={{width: 5.89, height: 5.09, left: 91.57, top: 7.50, position: 'absolute', transform: 'rotate(180deg)', transformOrigin: '0 0', background: 'black', border: '1.07px black solid'}}></div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -402,20 +411,21 @@ export class BreakTime extends PureComponent {
                                 <div style={{color: 'black', fontSize: 40, fontFamily: 'Inter', fontWeight: '600', wordWrap: 'break-word'}}>Break Time? Find a buddy! 🎈</div>
                                 <div style={{color: 'black', fontSize: 15, fontFamily: 'Inter', fontWeight: '400', wordWrap: 'break-word'}}>Huddle Up helps you make impromptu plans with people in the same space!</div>
                             </div>
-                            <div style={{paddingLeft: 50, paddingRight: 50, paddingTop: 30, paddingBottom: 30, background: '#A67CF3', borderRadius: 10, justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex'}}>
-                                <div style={{color: 'white', fontSize: 24, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}}>Less Goo</div>
+                            <button onClick={this.onClickLetsGo} style={{paddingLeft: 50, paddingRight: 50, paddingTop: 30, paddingBottom: 30, background: '#A67CF3', borderRadius: 10, justifyContent: 'center', alignItems: 'center', gap: 10, display: 'inline-flex'}}>
+                                <div style={{color: 'white', fontSize: 24, fontFamily: 'Inter', fontWeight: '500', wordWrap: 'break-word'}} >Less Goo</div>
                                 <div style={{width: 32, height: 32, position: 'relative'}}>
                                     <div style={{width: 32, height: 32, left: 0, top: 0, position: 'absolute'}}></div>
                                     <div style={{width: 22, height: 0, left: 5, top: 16, position: 'absolute', border: '1.50px white solid'}}></div>
                                     <div style={{width: 9, height: 18, left: 18, top: 7, position: 'absolute', border: '1.50px white solid'}}></div>
                                 </div>
-                            </div>
+                            </button>
                         </div>
                     </div>
                 </div>
+
             </div>
         );
     }
 }
 
-export default BreakTime;
+export default withRouter(BreakTime);

@@ -21,8 +21,8 @@ export class App extends PureComponent {
         <BrowserRouter>
           <Routes>
             <Route path="*" element={<NoPage />} />
-            <Route path="/" element={<Events />}/>
-            <Route index element={<Events />} />
+            <Route path="/" element={<BreakTime />}/>
+            <Route index element={<BreakTime />} />
             <Route path="events" element={<Events />}/>
             <Route path="breakTime" element={<BreakTime />}/>
             <Route path="selectCategories" element={<SelectCategories />}/>
